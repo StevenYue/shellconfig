@@ -5,7 +5,6 @@ set tabstop=4     " tabs are at proper location
 set expandtab     " don't use actual tab character (ctrl-v)
 set shiftwidth=4  " indenting is 4 spaces
 set autoindent    " turns it on
-set smartindent   " does the right thing (mostly) in programs
 set cindent       " stricter rules for C programs
 
 set showcmd             " Show (partial) command in status line.
@@ -23,8 +22,6 @@ set background=light
 "highlight Normal ctermfg=grey ctermbg=black
 colorscheme desert
 
-set ai                  " autoindent
-set si                  " smartindent 
 set nowrap              " do not wrap lines  
 set guifont=Liberation\ Mono\ 20        " do not wrap lines  
 set guioptions+=l       " don't move screen around 
