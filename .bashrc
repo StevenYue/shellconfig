@@ -115,6 +115,17 @@ fi
 
 
 ###################### Customized setting ########################
+x() {
+    if [ $# -ne 1 ]
+        then
+            title="bash"
+    else
+        title=$1
+            fi
+            xterm -T $title -fg grey -bg rgb:30/0a/24 -font 8x16bold -sb -sl 3000 -geometry 90x56 -e bash &
+}
+
+
 export PS1="$ "
 export PATH=$PATH:/home/s/workspace/scripts
-alias rmswp="rm *.swp"
+alias rmswp="rm .*.swp"
