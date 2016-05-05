@@ -37,5 +37,8 @@ set autochdir           " set working direction to current file
 set ignorecase          " case insensitive
 set incsearch           " show next word while entering search text
 
-"set clipboard=unnamed
+"in order to get this work, vim should have clipboard enabled, in vim use : echo has('clipboard')
+"return 1 means it's enabled, vice verse. if not, install vim-gnome
+set clipboard=unnamed   "makes copy and paste bewtween terminals much easier
+
 "set number
