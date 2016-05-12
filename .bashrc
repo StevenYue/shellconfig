@@ -122,10 +122,17 @@ x() {
     else
         title=$1
             fi
-            xterm -T $title -fg grey -bg rgb:30/0a/24 -font 8x16bold -sb -sl 3000 -geometry 90x56 -e bash &
+            xterm -T $title -fg grey -bg rgb:30/0a/24 -fa 'Ubuntu Mono' -sl 3000 -geometry 80x30 -e bash &
 }
 
 
 export PS1="$ "
 export PATH=$PATH:/home/s/workspace/scripts
 alias rmswp="rm .*.swp"
+alias lstools="ls /home/s/workspace/scripts/ -I README.md"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/s/Downloads/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/home/s/Downloads/google-cloud-sdk/completion.bash.inc'
