@@ -125,11 +125,15 @@ x() {
             xterm -T $title -fg grey -bg rgb:30/0a/24 -fa 'Ubuntu Mono' -sl 3000 -geometry 80x30 -e bash &
 }
 
+if [[ $PATH != *"/home/s/workspace/scripts"* ]]
+then
+    export PATH=$PATH:/home/s/workspace/scripts
+fi
 
 export PS1="$ "
-export PATH=$PATH:/home/s/workspace/scripts
 alias rmswp="rm .*.swp"
 alias lstools="ls /home/s/workspace/scripts/ -I README.md"
+alias cdinolib="cd /usr/share/arduino/libraries/"
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/s/Downloads/google-cloud-sdk/path.bash.inc'
