@@ -41,4 +41,6 @@ set incsearch           " show next word while entering search text
 "return 1 means it's enabled, vice verse. if not, install vim-gnome
 set clipboard=unnamed   "makes copy and paste bewtween terminals much easier
 
+"disable mouse select in vim
+set mouse-=a
 "set number
