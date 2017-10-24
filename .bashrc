@@ -135,9 +135,5 @@ alias rmswp="rm .*.swp"
 alias lstools="ls /home/s/workspace/scripts/ -I README.md"
 alias rmlog="rm *.log"
 alias tmuxreload="tmux source-file ~/.tmux.conf"
-
-# The next line updates PATH for the Google Cloud SDK.
-#source '/home/s/Downloads/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-#source '/home/s/Downloads/google-cloud-sdk/completion.bash.inc'
+alias lscd="less ~/.bashrc | grep cd"
+alias cdscit='cd /home/s/workspace/scikit-learn/doc/tutorial'
