@@ -1,0 +1,8 @@
+selectp -t 0 # select the first (0) pane
+
+# split it into a 3 halves 2:2:1
+run-shell 'tmux splitw -h -p 60 -c #{pane_current_path}'
+# automaticall in second pane now
+run-shell 'tmux splitw -h -p 33 -c #{pane_current_path}'
+selectp -t 0 # go back to the first pane
+

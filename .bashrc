@@ -133,11 +133,8 @@ fi
 export PS1="$ "
 alias rmswp="rm .*.swp"
 alias lstools="ls /home/s/workspace/scripts/ -I README.md"
-alias cdinolib="cd /usr/share/arduino/libraries/"
-alias cdgitkey="cd /root/.ssh/"
-alias g++="g++ --std=c++0x"
-alias chrome="google-chrome"
 alias rmlog="rm *.log"
+alias tmuxreload="tmux source-file ~/.tmux.conf"
 
 # The next line updates PATH for the Google Cloud SDK.
 #source '/home/s/Downloads/google-cloud-sdk/path.bash.inc'

@@ -1,0 +1,14 @@
+selectp -t 0 # select the first (0) pane
+
+# split it into a two halves
+run-shell 'tmux splitw -h -p 50 -c #{pane_current_path}'
+# automaticall in second pane now
+# split it into a two rows
+run-shell 'tmux splitw -v -p 50 -c #{pane_current_path}'
+
+selectp -t 0 # select the new, second (0) pane
+
+# split it into two rows
+run-shell 'tmux splitw -v -p 50 -c #{pane_current_path}'
+selectp -t 0 # go back to the first pane
+
